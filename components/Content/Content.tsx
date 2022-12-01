@@ -41,7 +41,9 @@ const Content = () => {
             {films.map((data) => (
                 <FilmContainer className='film-container' key={data.id}>
                     <Poster className="back">
-                        <img src={data.url} alt={data.title}/>
+                        <p>
+                            <img src={data.url} alt={data.title}/>
+                        </p>
                         <FilmDetails>
                             <strong>{data.title}</strong>
                             <p>{data.description}</p>

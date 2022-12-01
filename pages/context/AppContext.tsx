@@ -44,7 +44,7 @@ export function AppProvider({ children }: AppProviderProps) {
                 const queryParams: AxiosRequestConfig = {
                     params: {limit: 10},
                 };
-                const response: AxiosResponse<Film> = await api.get('/films', queryParams);
+                const response: AxiosResponse = await api.get('/films', queryParams);
                 setFilms(response.data);
             }
         }
@@ -55,7 +55,7 @@ export function AppProvider({ children }: AppProviderProps) {
         console.log('handleFilms');
         try {
             if (addFilms === undefined) {
-                const response: AxiosResponse<Film> = await api.post('/films/api');
+                const response: AxiosResponse = await api.post('/films/api');
                 const jsonFilms = JSON.parse(response.data);
                 setFilms(jsonFilms)
             }else {

@@ -1,19 +1,20 @@
 import styled from "styled-components";
 
 export const FilmContainer = styled.section`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex: 1;
+    justify-content: start;
     padding: 0.5rem 1.2rem;
 `;
 
 export const Poster = styled.div`
-    max-width: 80%;
-
-    display: "flex";
-    align-items: flex-start;
+    align-items: start;
+    justify-content: center;
 
     gap: 1.875rem;
+
+    p {
+        width: 100%;
+    }
 
     img {
         width: 170px;
@@ -22,8 +23,7 @@ export const Poster = styled.div`
 
 
 export const FilmDetails = styled.div`
-    display: flex;
-    flex-direction: column;
+    width: 100%;
     gap: 1.1875rem;
 
     strong {
