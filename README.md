@@ -98,10 +98,7 @@ Not defined yet.
 ### :checkered_flag: Preview Project
 
 - [![Heroku-server][Heroku-server]][Heroku-server-url]
-- [![CodeSandbox][CodeSandbox]][CodeSandbox-url]:
-
->Note: This feature is being developed.
-
+- [![Vercel][Vercel]][Vercel-url]
 ## 🤔 How to contribure
 
 - Make a fork this repository;
@@ -246,3 +243,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 [TypeScript.org]: https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white
 [TypeScript-url]: https://www.typescriptlang.org
+
+[Vercel]: https://img.shields.io/badge/Vercel-FFF?style=for-the-badge&logo=vercel&logoColor=000000
+[Vercel-url]: https://films-catalog-web-gd7o.vercel.app/
