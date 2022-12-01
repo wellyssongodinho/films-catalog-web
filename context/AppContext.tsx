@@ -1,6 +1,6 @@
 import { AxiosRequestConfig, AxiosResponse } from 'axios';
 import { createContext, useContext, useEffect, useState } from 'react';
-import { api } from '../../service/api';
+import { api } from '../service/api';
 
 const FILMS_STORAGE = '@challenge:films';
 
@@ -67,8 +67,10 @@ export function AppProvider({ children }: AppProviderProps) {
     };
     
     return (
-        <AppContext.Provider value={{films, handleFilms}}>
-            {children}
-        </AppContext.Provider>
+        <>
+            <AppContext.Provider value={{films, handleFilms}}>
+                {children}
+            </AppContext.Provider>
+        </>
     );
 }

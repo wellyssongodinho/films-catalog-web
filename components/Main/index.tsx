@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useAppContext } from "../../pages/context/AppContext";
+import { useAppContext } from "../../context/AppContext";
 import Content from "../Content/Content";
 import {
   MainContainer, SearchBtn

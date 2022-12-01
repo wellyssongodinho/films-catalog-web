@@ -1,7 +1,8 @@
 import { AxiosRequestConfig } from "axios";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import { useAppContext } from "../../pages/context/AppContext";
+import { useAppContext } from "../../context/AppContext";
 import { api } from "../../service/api";
 import { FilmContainer, FilmDetails, Poster } from "./styles";
 
@@ -42,7 +43,7 @@ const Content = () => {
                 <FilmContainer className='film-container' key={data.id}>
                     <Poster className="back">
                         <p>
-                            <img src={data.url} alt={data.title}/>
+                            <Image src={data.url} alt={data.title} width={200} height={100}/>
                         </p>
                         <FilmDetails>
                             <strong>{data.title}</strong>
